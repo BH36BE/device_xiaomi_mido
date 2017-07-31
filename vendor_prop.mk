@@ -77,6 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 debug.cpurend.vsync=false \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
+debug.hwui.use_buffer_age=false \
 debug.mdpcomp.logs=0 \
 debug.sdm.support_writeback=0 \
 debug.sf.hw=0 \
