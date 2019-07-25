@@ -1197,10 +1197,6 @@
         <ctl name="HPHR" value="Switch" />
     </path>
 
-    <path name="hph-highquality-mode">
-        <ctl name="RX HPH Mode" value="HD2" />
-    </path>
-
     <path name="hph-lowpower-mode">
         <ctl name="RX HPH Mode" value="CLS_H_LOHIFI" />
     </path>
