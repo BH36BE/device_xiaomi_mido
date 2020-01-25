@@ -23,6 +23,8 @@ genfscon proc /touchpanel                                             u:object_r
 # Power
 genfscon debugfs /rpm_stats                                     u:object_r:debugfs_rpm:s0
 genfscon debugfs /system_stats                                  u:object_r:debugfs_rpm:s0
+genfscon sysfs /power/rpmh_stats/master_stats                   u:object_r:sysfs_rpm:s0
+genfscon sysfs /power/system_sleep/stats                        u:object_r:sysfs_system_sleep_stats:s0
 genfscon sysfs /devices/soc/soc:qcom,cpubw                      u:object_r:sysfs_devfreq:s0
 genfscon sysfs /devices/soc/soc:qcom,mincpubw                   u:object_r:sysfs_devfreq:s0
 genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0                u:object_r:sysfs_devfreq:s0

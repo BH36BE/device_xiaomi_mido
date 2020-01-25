@@ -25,5 +25,12 @@ type sysfs_fps, sysfs_type, fs_type;
 # Input files
 type idc_file, file_type, vendor_file_type;
 type keylayout_file, file_type, vendor_file_type;
+
 type debugfs_rpm, debugfs_type, fs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
+
+type debugfs_sched_features, debugfs_type, fs_type;
+
+type sysfs_rpm, sysfs_type, fs_type;
+type sysfs_system_sleep_stats, sysfs_type, fs_type;
+type sysfs_wireless_supply, sysfs_type, fs_type;
