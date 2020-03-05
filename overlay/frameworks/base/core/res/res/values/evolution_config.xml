@@ -20,4 +20,7 @@
     <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_adaptiveChargingSuspendValue" translatable="false">0</string>
     <string name="config_adaptiveChargingResumeValue" translatable="false">1</string>
+
+    <!-- Whether device supports gestures on fingerprint sensor -->
+    <bool name="config_supportsGesturesOnFingerprintSensor">true</bool>
 </resources>
