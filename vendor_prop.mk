@@ -203,3 +203,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.zram.mark_idle_delay_mins=60 \
 ro.zram.first_wb_delay_mins=1440 \
 ro.zram.periodic_wb_delay_hours=24
+
+# Improve touch detection
+PRODUCT_PROPERTY_OVERRIDES += \
+touch.pressure.scale=0.001 \
+persist.sys.ui.hw=1 \
+view.scroll_friction=10 \
+touch.size.calibration=diameter \
+touch.size.scale=1 \
+touch.size.bias=0 \
+touch.size.isSummed=0 \
+touch.pressure.scale=0.001 \
+touch.orientation.calibration=none \
+touch.distance.calibration=none \
+touch.distance.scale=0 \
+touch.coverage.calibration=box \
+touch.gestureMode=spots \
+MultitouchSettleInterval=1ms \
+MultitouchMinDistance=1px \
+TapInterval=1ms \
+TapSlop=1px
