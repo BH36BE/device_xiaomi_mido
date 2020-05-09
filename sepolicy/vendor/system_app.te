@@ -2,11 +2,16 @@
 set_prop(system_app, vendor_fm_prop)
 
 # XiaomiParts
+allow xiaomiparts_app {
+  storagestats_service
+}:service_manager find;
+
 allow system_app {
     sysfs_hgain
     sysfs_mgain
     sysfs_sgain
     sysfs_torch
+    sysfs_thermal
 }:file rw_file_perms;
 
 allow system_app {
