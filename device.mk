@@ -152,8 +152,7 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libcamshim \
     libmm-qcamera \
-    libui_shim \
-    Snap
+    libui_shim
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
@@ -439,3 +438,7 @@ PRODUCT_PACKAGES += \
 # Youtube by Vanced Team
 PRODUCT_PACKAGES += \
     Youtube
+
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
