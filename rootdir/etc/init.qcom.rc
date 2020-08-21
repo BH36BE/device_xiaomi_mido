@@ -310,6 +310,9 @@ service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
 on property:sys.boot_completed=1
     start vendor.qcom-post-boot
 
+    # This initializes vendor.qti.hardware.perf service
+    setprop vendor.post_boot.parsed 1
+
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
     write /proc/sys/net/ipv4/tcp_adv_win_scale  2
