@@ -34,4 +34,9 @@
 
     <!-- String indicating the package name of the device ImsService implementation for RCS. -->
     <string name="config_ims_rcs_package" translatable="false">org.codeaurora.ims</string>
+
+    <!-- Determine whether calls to mute the microphone in PhoneUtils
+         are routed through the android.media.AudioManager class (true) or through
+         the com.android.internal.telephony.Phone interface (false). -->
+    <bool name="send_mic_mute_to_AudioManager">true</bool>
 </resources>
