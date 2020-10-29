@@ -613,6 +613,13 @@
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
 
+    <!-- Button backlight control. Possible values are:
+	 0 - Not supported
+	 1 - Supported, but only on/off mode
+	 2 - Supported with variable brightness control
+    -->
+    <integer name="config_deviceSupportsButtonBrightnessControl">1</integer>
+
     <!-- Button brightness -->
     <bool name="config_button_brightness_support">true</bool>
 
