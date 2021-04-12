@@ -1,6 +1,9 @@
 get_prop(system_server, userspace_reboot_config_prop)
 get_prop(system_server, userspace_reboot_exported_prop)
 
+# Adaptive charging
+allow system_server sysfs_battery_supply:file { getattr open read write };
+
 # power
 allow system_server sysfs_battery_supply:file { read open getattr };
 
