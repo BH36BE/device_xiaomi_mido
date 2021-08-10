@@ -160,6 +160,8 @@ on boot
     chmod 0660 /dev/cpuset/camera-daemon/tasks
     chown system system /sys/kernel/hbtp/display_pwr
 
+    chown system system /sys/class/thermal/thermal_message/sconfig
+
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
