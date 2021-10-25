@@ -163,6 +163,10 @@ on charger
     start thermal-engine
 
 on boot
+    #Thermal
+    chown system system /sys/class/thermal/thermal_message/sconfig
+    write /sys/class/thermal/thermal_message/sconfig 0
+
 # Flashlight
     chown root system /sys/class/leds/led:torch_1/max_brightness
     chmod 0660 /sys/class/leds/led:torch_1/max_brightness
@@ -205,6 +209,9 @@ on boot
 
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
+
+on property:sys.boot_completed=1
+    write /sys/class/thermal/thermal_message/sconfig 0
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
