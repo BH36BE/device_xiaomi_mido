@@ -219,3 +219,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.zram.mark_idle_delay_mins=60 \
 ro.zram.first_wb_delay_mins=1440 \
 ro.zram.periodic_wb_delay_hours=24
+
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.dirac.acs.controller=qem \
+persist.dirac.acs.storeSettings=1 \
+persist.dirac.acs.ignore_error=1 \
+ro.audio.soundfx.dirac=true \
+persist.audio.dirac.speaker=true
