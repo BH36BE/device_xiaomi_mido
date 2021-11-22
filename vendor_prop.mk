@@ -240,3 +240,11 @@ MultitouchSettleInterval=1ms \
 MultitouchMinDistance=1px \
 TapInterval=1ms \
 TapSlop=1px
+
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.dirac.acs.controller=qem \
+persist.dirac.acs.storeSettings=1 \
+persist.dirac.acs.ignore_error=1 \
+ro.audio.soundfx.dirac=true \
+persist.audio.dirac.speaker=true
