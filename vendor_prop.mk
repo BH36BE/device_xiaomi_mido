@@ -208,3 +208,11 @@ wifi.interface=wlan0
 # Wifi-Display
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.wfd.virtual=0
+
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.dirac.acs.controller=qem \
+persist.dirac.acs.storeSettings=1 \
+persist.dirac.acs.ignore_error=1 \
+ro.audio.soundfx.dirac=true \
+persist.audio.dirac.speaker=true
