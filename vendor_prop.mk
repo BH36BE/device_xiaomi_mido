@@ -105,6 +105,11 @@ vendor.hw.fm.init=0
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# HWUI
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.hwui.use_hint_manager=true \
+debug.hwui.target_cpu_time_percent=30
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
