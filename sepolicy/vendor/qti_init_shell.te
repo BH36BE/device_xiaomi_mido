@@ -12,3 +12,5 @@ allow qti_init_shell self:socket create;
 
 # Postboot
 allow qti_init_shell sysfs:file { write setattr };
+
+allow qti_init_shell sysfs_io_sched_tuneable:file { write };

@@ -39,3 +39,5 @@ allow hal_fingerprint_mido keystore_service:service_manager find;
 # For permissions checking
 binder_call(hal_fingerprint_mido, system_server);
 allow hal_fingerprint_mido permission_service:service_manager find;
+allow hal_fingerprint_mido sysfs:file { write };
+
