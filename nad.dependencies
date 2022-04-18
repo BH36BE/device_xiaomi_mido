@@ -1,0 +1,9 @@
+[
+ {
+   "remote"      : "github",
+   "repository"  : "https://github.com/kdrag0n/proton-clang",
+   "branch"      : "master",
+   "clone-depth" : "1",
+   "target_path" : "prebuilts/clang/host/linux-x86/proton"
+ }
+]
