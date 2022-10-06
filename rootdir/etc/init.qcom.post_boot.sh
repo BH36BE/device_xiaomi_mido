@@ -205,13 +205,13 @@ function 8953_sched_dcvs_hmp()
     #governor settings
     echo 1 > /sys/devices/system/cpu/cpu0/online
     echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-    echo "19000 1401600:39000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
-    echo 85 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
-    echo 20000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
-    echo 1401600 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+    echo "20000 1036800:60000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+    echo 80 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    echo 40000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+    echo 1036800 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
     echo 0 > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
-    echo "85 1401600:80" > /sys/devices/system/cpu/cpufreq/interactive/target_loads
-    echo 39000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+    echo "90 1036800:75" > /sys/devices/system/cpu/cpufreq/interactive/target_loads
+    echo 45000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
     echo 40000 > /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
     echo 19 > /proc/sys/kernel/sched_upmigrate_min_nice
     # Enable sched guided freq control
