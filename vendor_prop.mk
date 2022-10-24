@@ -80,6 +80,7 @@ debug.enable.sglscale=1 \
 debug.hwui.use_buffer_age=false \
 debug.mdpcomp.logs=0 \
 debug.sdm.support_writeback=0 \
+debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
